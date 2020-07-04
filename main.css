@@ -1,0 +1,127 @@
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    cursor: default;
+}
+
+
+
+h1, h2 {
+    margin: 10px;
+}
+
+#change-player-one:hover {
+    cursor: pointer;
+}
+
+#board:hover {
+    cursor: pointer;
+}
+
+#change-player-one {
+    padding-bottom: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#title-area {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#setup-area {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+#player-area {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#form-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.xo-label {
+    margin: 0 40px;
+}
+
+#goes-first-label {
+    text-align: center;
+}
+
+#form-input {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus {
+    outline: none;
+}
+
+.player-names {
+    margin: 10px 20px;
+}
+
+#computer-players {
+    display: flex;
+    justify-content: center;
+}
+
+.computer-player {
+    margin: 10px 26px;
+}
+
+#board-area {
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    margin: 20px;
+}
+
+#game-over-area {
+    display: flex;
+    justify-content: center;
+}
+
+#winner-area {
+    display: flex;
+    justify-content: center;
+}
+
+#winner-circle {
+    text-align: center;
+}
+
+#restart-game {
+    display: flex;
+    justify-content: center;
+}
+
+#play-again {
+    text-align: center;
+}

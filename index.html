@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <script>
+            function selectText(id) {
+                document.getElementById(id).focus();
+                document.getElementById(id).select();
+            }
+        </script>
+        <div id="main-container">
+            <div id="title-area">
+                <div id="title"><h1>Unicode Tic Tac Toe</h1></div>
+            </div>
+            <div id="player-area">
+                <form>
+                    <div id="goes-first-label">X goes first<br>(click arrow to change)</div>
+                    <div id="form-label">
+                        <label for="x-name" class="xo-label" id='X'><h2>X</h2></label>
+                        <h2 id="change-player-one"></h2>
+                        <label for="o-name" class="xo-label" id='O'><h2>O</h2></label>
+                    </div>
+                    <div id="form-input">
+                        <input type="text" id="x-name" class="player-names" size="15" value="Player Name" onclick="selectText('x-name')">
+                        <input type="text" id="o-name" class="player-names" size="15" value="Player Name" onclick="selectText('o-name')">
+                    </div>
+                    <div id="computer-players">
+                        <input type="button" id="x-computer" class="computer-player" value="Play computer easy">
+                        <input type="button" id="o-computer" class="computer-player" value="Play computer hard">
+                    </div>
+                </form>
+            </div>
+            <div id="board-area">
+                <div id="board"></div>
+            </div>
+            <div id="winner-area">
+                <h2 id="winner-circle"></h2>
+            </div>
+            <div id="restart-game">
+                <input type="button" id="play-again" class="play-again-button" value="Play again">
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
